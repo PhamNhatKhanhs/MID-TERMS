@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Alarm Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="clock-container">
+        <div id="date-display"></div>
+        <div id="time-display"></div>
+    </div>
+    <h1>Online Alarm Clock</h1>
+    <div id="set-alarm-container">
+        <label for="alarm-time">Set Alarm Time:</label>
+        <input type="time" id="alarm-time">
+        <label for="alarm-date">Set Alarm Date:</label>
+        <input type="date" id="alarm-date">
+        <button id="set-alarm" onclick="setAlarm()">Set Alarm</button>
+    </div>
+    <div id="alarm-info">Alarm ringing!</div>
+    <div class="cooldown-info" id="cooldown-info"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

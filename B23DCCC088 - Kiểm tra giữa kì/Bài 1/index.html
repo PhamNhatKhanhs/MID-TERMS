@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Máy Tính</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="button-row">
+            <button class="number" onclick="inputNumber(7)">7</button>
+            <button class="number" onclick="inputNumber(8)">8</button>
+            <button class="number" onclick="inputNumber(9)">9</button>
+            <button class="operator" onclick="inputOperator('/')">÷</button>
+        </div>
+        <div class="button-row">
+            <button class="number" onclick="inputNumber(4)">4</button>
+            <button class="number" onclick="inputNumber(5)">5</button>
+            <button class="number" onclick="inputNumber(6)">6</button>
+            <button class="operator" onclick="inputOperator('*')">×</button>
+        </div>
+        <div class="button-row">
+            <button class="number" onclick="inputNumber(1)">1</button>
+            <button class="number" onclick="inputNumber(2)">2</button>
+            <button class="number" onclick="inputNumber(3)">3</button>
+            <button class="operator" onclick="inputOperator('-')">-</button>
+        </div>
+        <div class="button-row">
+            <button class="number zero" onclick="inputNumber(0)">0</button>
+            <button class="decimal" onclick="inputDecimal()">.</button>
+            <button class="operator" onclick="inputOperator('+')">+</button>
+        </div>
+        <div class="button-row">
+            <button class="all-clear" onclick="resetCalculator()">AC</button>
+            <button class="equals" onclick="performCalculation()">=</button>
+        </div>
+    </div>
+    <div class="headbar">
+        <h1>Calculator</h1>
+        <nav>
+            <a href="#">Trang Chủ</a>
+            <a href="#">Giới Thiệu</a>
+            <a href="#">Liên Hệ</a>
+        </nav>
+    </div>
+    <footer> </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #06080f;
+    color: white;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#clock-container {
+    background-color: rgba(6, 8, 15, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#set-alarm-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#alarm-info {
+    font-size: 1.2em;
+    color: #ff0000;
+}
+
+input[type="time"],
+input[type="date"],
+button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+}
+
+#date-display {
+    font-size: 1.5em;
+}
+
+#time-display {
+    font-size: 3em;
+}
+
+#timerCanvas {
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    display: block;
+    margin: 20px auto;
+}
+
+.countdown {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cooldown-info {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu đen trong suốt với độ trong suốt 0.5 */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    bottom: 20px; /* Đặt vị trí dưới cùng */
+    left: 50%; /* Đặt vị trí giữa màn hình */
+    transform: translateX(-50%); /* Dịch chuyển vị trí theo chiều ngang */
+}
